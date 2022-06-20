@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: #444;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f3f3;
+}
+
+header {
+    background-color: #3AB0FF;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__section {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width: 800px;
+    background-color: #1363DF;
+    padding: 5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.hero__section h2, p {
+    padding-bottom: 1.3rem;
+}
+.hero__section h2 {
+    font-size: 3rem;
+}
+.hero__section p {
+    font-size: 1.7rem;
+}
+.hero__section button {
+    padding: 1.2rem 2.4rem;
+    color: #444;
+    font-family: inherit;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #F15412;
+    color: #fff;
+}
+
+.header-dark {
+    background-color: #06283D;
+}
+.hero__section-dark {
+    background-color: #4B5D67;
+}
+
+/* WHEN USER ENABLE THE DARK MODE IN HIS/HER SYSTEM */
+/* @media (prefers-color-scheme: dark) {
+    header {
+        background-color: #06283D;
+    }
+    .hero__section {
+        background-color: #4B5D67;
+    }
+} */
+
+@media (max-width: 600px) {
+    .hero__section h2 {
+        font-size: 2.4rem;
+    }
+    .hero__section p {
+        font-size: 1.5rem;
+    }
+    .hero__section button {
+        font-size: 1.5rem;
+    }
+}
+
+.top-checkbox {
+    margin-top: 2rem;
+}
+.top-checkbox label {
+    position: relative;
+    bottom: 6px;
+    font-size: 1.6rem;
+}
+.checkbox {
+    width: 2.4rem;
+    height: 2.4rem;
+    accent-color: #444;
+}
